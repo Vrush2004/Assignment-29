@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #ff80b3;
+    width: 100%;
+    height: 100%;
+}
+.text_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;  
+    margin-top: 10%;
+    height: 100vh;       
+    text-align: center;
+    gap: 50px;
+}
+h1{
+    padding: 10px;
+    color: #cc0052;
+    font-size: 40px;
+}
+textarea{
+    background-color: #ffcce0;
+    border-radius: 10px;
+    border: solid 2px #cc0052;
+    padding: 10px;
+    font-size: 15px;
+    color: #cc0052;
+}
