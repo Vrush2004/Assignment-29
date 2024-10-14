@@ -64,7 +64,7 @@ textarea {
     border-radius: 15px;
 }
 
-@media screen and (max-width:500px){
+@media screen and (max-width: 1000px){
     h1{
         font-size: 35px;
     }
@@ -76,7 +76,8 @@ textarea {
     }
     .btn_container{
         margin-top: 30px;
-        flex-direction: column;
+        flex-direction: row;
+        flex-wrap: wrap;
         gap: 20px;
     }
     textarea {
