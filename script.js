@@ -10,9 +10,9 @@ function handleLowerCase(){
 }
 
 function handleWordCount(){
-    
+    outputElement.value = `Word Count: ${inputElement.value.split(" ").length}`;
 }
 
 function handleCharacterCount(){
-    
+    outputElement.value = `Character count : ${inputElement.value.length}`;
 }
