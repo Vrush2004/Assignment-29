@@ -7,14 +7,6 @@ body{
     width: 100%;
     height: 100%;
 }
-.text_container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;  
-    margin-top: 7%;      
-    text-align: center;
-    gap: 50px;
-}
 h1{
     color: #cc0052;
     font-size: 40px;
@@ -27,7 +19,20 @@ h2{
     text-align: center;
     padding: 10px;
 }
-textarea{
+.text_container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;  
+    margin-top: 7%;      
+    text-align: center;
+    gap: 50px;
+}
+textarea {
+    width: 450px;            
+    height: 200px;          
+    max-width: 100%;       
+    max-height: 300px;   
     background-color: #ffcce0;
     border-radius: 10px;
     border: solid 2px #cc0052;
@@ -36,7 +41,7 @@ textarea{
     color: #cc0052;
 }
 .btn_container{
-    margin-top: 40px;
+    margin: 40px auto;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -52,8 +57,29 @@ textarea{
     width: 170px;
     font-size: 16px;
     font-weight: 700;
+    cursor: pointer;
 }
 .btn:hover{
     box-shadow: 0px 0px 20px 3px #e32772;
     border-radius: 15px;
+}
+
+@media screen and (max-width:500px){
+    h1{
+        font-size: 35px;
+    }
+    h2{
+        font-size: 20px;
+    }
+    .text_container {
+        flex-direction: column;
+    }
+    .btn_container{
+        margin-top: 30px;
+        flex-direction: column;
+        gap: 20px;
+    }
+    textarea {
+        width: 90%;
+    }
 }

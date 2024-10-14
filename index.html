@@ -8,21 +8,21 @@
 </head>
 <body>
     <h1>Text Operations</h1>
-    <div class="text_container">
-        <div class="text">
-            <h2>Input Text : </h2>
-            <textarea id="input" cols="50" rows="10"></textarea>
+        <div class="text_container">
+            <div class="text">
+                <h2>Input Text : </h2>
+                <textarea id="input" ></textarea>
+            </div>
+            <div class="text">
+                <h2>Output Text :</h2>
+                <textarea id="output" ></textarea>
+            </div>
         </div>
-        <div class="text">
-            <h2>Output Text :</h2>
-            <textarea id="output" cols="50" rows="10"></textarea>
-        </div>
-    </div>
     <div class="btn_container">
-        <button class="btn" id="upper_case" onclick="handleUpperCase()">Upper Case</button>
-        <button class="btn" id="lower_case" onclick="handleLowerCase()">Lower Case</button>
-        <button class="btn" id="word_count" onclick="handleWordCount()">Word Count</button>
-        <button class="btn" id="character_count" onclick="handleCharacterCount()">Character Count</button>
+        <button class="btn" onclick="handleUpperCase()">Upper Case</button>
+        <button class="btn" onclick="handleLowerCase()">Lower Case</button>
+        <button class="btn" onclick="handleWordCount()">Word Count</button>
+        <button class="btn" onclick="handleCharacterCount()">Character Count</button>
     </div>
     <script src="script.js"></script>
 </body>
